@@ -9,20 +9,27 @@
 <body>
   <div class="form-container">
     <form action="" method="post" id="sign-up">
-      <section class="input">
-        <div class="name-input">
-          <label for="first-name" class="name-label">First Name</label>
-          <input type="text" name="user">
+      <fieldset class="input">
+        <label for="name" class="name-label">Name</label>
+        <span>
+          <input type="text" name="user" placeholder="First">
+          <input type="text" name="user" placeholder="Last">
+        </span>
+
+        <div class="email-input">
+          <span>
+            <label for="email" class="email-label">Email</label>
+            <label for="email" class="email-label" style="color:red">*</label>
+          </span>
+          <input type="text" name="email" placeholder="name@example.com" required>
         </div>
-    
-        <div class="name-input">
-          <label for="last-name" class="name-label">Last Name</label>
-          <input type="text" name="user">
+        <div class="email-input">
+          <input type="text" name="email" placeholder="Confirm Email" required>
         </div>
-      </section>
+      </fieldset>
 
       <section class="submit">
-        <button type="submit">Submit</button>
+        <button type="submit" id="sign-up-button">Sign Up!</button>
       </section>
     </form>
   </div>

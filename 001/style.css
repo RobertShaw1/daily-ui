@@ -3,6 +3,24 @@ html, body {
   width: 100%;
 }
 
+input {
+  border-bottom-style: groove;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+input:focus {
+  outline: none;
+  border-bottom-color: red;
+}
+
+button:focus, button:hover {
+  outline: none;
+  background-color: orange;
+  color: white;
+}
+
 .form-container {
   height: 100%;
   display: flex;
@@ -10,14 +28,14 @@ html, body {
   align-items: center;
 }
 
-.name-input {
+.name-input, .email-input, .password-input {
   margin: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column;
 }
 
 #sign-up {
-  height: 30rem;
+  height: 18rem;
   width: 22rem;
   display: flex;
   justify-content: space-between;
@@ -34,9 +52,16 @@ html, body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  border: none;
 }
 
 
 #sign-up .submit {
-  margin-bottom: 3rem;
+  margin: auto;
+}
+
+#sign-up-button {
+  height: 2rem;
+  width: 12rem;
+  border-radius: 1rem;
 }
