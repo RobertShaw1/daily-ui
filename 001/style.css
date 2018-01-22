@@ -1,11 +1,50 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,Unbuntu, Cantarell,Helvetica,Neue, sans-serif;
 }
+
+.form-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-up {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* border-style: solid;
+  border-color: black;
+  border-width: thin; */
+  border-radius: .5rem;
+  box-shadow: 0px 3px 20px 5px grey;
+}
+
+.user-info {
+  margin-top: 3rem;
+  border: none;
+}
+
+fieldset section {
+  margin-bottom: 2rem;
+}
+
+.label-block {
+  margin-bottom: .5rem;
+}
+
 
 /* INPUT STYLING */
 /* #region */
 input {
+  height: 2rem;
+  font-size: .75rem;
   border-bottom-style: groove;
   border-top-style: none;
   border-left-style: none;
@@ -32,38 +71,6 @@ input:focus {
 /* #endregion */
 /* END INPUT STYLING */
 
-.form-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#sign-up {
-  height: 22rem;
-  width: 22rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-  border-radius: 1rem;
-}
-
-.user-info {
-  margin-top: 3rem;
-  border: none;
-}
-
-fieldset section {
-  margin-bottom: 2rem;
-}
-
-.label-block {
-  margin-bottom: .5rem;
-}
 
 .name-input, .email-input, .password-input {
   margin: 1rem 0 1rem 0;
@@ -71,19 +78,24 @@ fieldset section {
   flex-direction: column;
 }
 
-
 #sign-up .submit {
   margin: auto;
 }
 
 #sign-up-button {
-  height: 2rem;
-  width: 12rem;
-  border-radius: 1rem;
+  height: 2.5rem;
+  width: 6.5rem;
+  border-radius: .3rem;
+  /* background-color: ghostwhite; */
 }
 
 button:focus, button:hover {
   outline: none;
   background-color: #FF8E0D;
-  color: white;
+  color: ghostwhite;
 }
+
+
+/* RESPONSIVE */
+
+/* END RESPONSIVE */
